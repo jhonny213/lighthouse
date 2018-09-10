@@ -21,7 +21,7 @@ function generateMockArtifacts() {
 }
 function generateMockAuditContext() {
   return {
-    computedCaches: new Map(),
+    computedCache: new Map(),
   };
 }
 

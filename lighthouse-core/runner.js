@@ -202,7 +202,7 @@ class Runner {
     const auditsContext = {
       settings,
       LighthouseRunWarnings: runWarnings,
-      computedCaches: new Map(),
+      computedCache: new Map(),
     };
 
     // Run each audit sequentially
@@ -215,7 +215,7 @@ class Runner {
     return auditResults;
   }
 
-  /** @typedef {Pick<LH.Audit.Context, 'settings'|'LighthouseRunWarnings'|'computedCaches'>} AuditsContext */
+  /** @typedef {Pick<LH.Audit.Context, 'settings'|'LighthouseRunWarnings'|'computedCache'>} AuditsContext */
 
   /**
    * Checks that the audit's required artifacts exist and runs the audit if so.
